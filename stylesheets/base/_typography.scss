@@ -1,3 +1,11 @@
-/**
- * Basic typography style for copy text
- */
+.header__title{
+    @include typographyStyle($font-stack, 75px, bold, 1.1, $base-color);
+}
+.header__icons_social{
+    @include typographyIcons(15px, $base-color);
+}
+.header__action_icon{
+    i{
+        @include typographyIcons(40px, $base-color);
+    }
+}
