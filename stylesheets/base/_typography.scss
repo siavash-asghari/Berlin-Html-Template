@@ -9,3 +9,20 @@
         @include typographyIcons(40px, $base-color);
     }
 }
+.about__content_title{
+    @include typographyStyle($font-stack, 23px, bold, 30px, $header-color);
+}
+.about__content_content{
+    @include typographyStyle($font-stack, 15px, 400, 28px, $text-color);
+}
+.slider__item_icon{
+    i{
+        @include typographyIcons(30px, $header-color);
+    }
+}
+.slider__item_title{
+    @include typographyStyle($font-stack, 15px, 500, 16.5px, $header-color);
+}
+.slider__item_des{
+    @include typographyStyle($font-stack, 13px, 500, 24px, $text-color);
+}

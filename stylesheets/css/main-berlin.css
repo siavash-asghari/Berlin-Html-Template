@@ -140,6 +140,43 @@ body {
   color: white;
 }
 
+.about__content_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #333333;
+}
+
+.about__content_content {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #748182;
+}
+
+.slider__item_icon i {
+  font-size: 30px;
+  color: #333333;
+}
+
+.slider__item_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16.5px;
+  color: #333333;
+}
+
+.slider__item_des {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #748182;
+}
+
 /**
  * Clear inner floats
  */
@@ -184,5 +221,73 @@ body {
   -webkit-animation: action 2s infinite;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+.about {
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 80%, 76% 96%, 0 78%, 0% 0%);
+          clip-path: polygon(50% 0, 100% 0, 100% 80%, 76% 96%, 0 78%, 0% 0%);
+  background: #f5f5f5;
+  padding: 300px 0;
+  margin-top: -170px;
+  position: relative;
+  z-index: -1;
+}
+
+.about__image {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 50px;
+}
+
+.about__image_img {
+  width: 100%;
+  -webkit-box-shadow: -40px 54px 0px 3px #dddddd;
+  box-shadow: -40px 54px 0px 3px #dddddd;
+}
+
+.about__content {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-top: 70px;
+}
+
+.about__content_title {
+  margin-bottom: 30px;
+}
+
+.about__content_content {
+  margin-bottom: 30px;
+}
+
+.slider {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.slider__item {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__item_icon {
+  padding: 5px 10px;
+}
+
+.slider__item_title {
+  margin-bottom: 15px;
+}
+
+.slider__item_content {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=main-berlin.css.map */
