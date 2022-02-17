@@ -88,13 +88,6 @@
   }
 }
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
 * {
   margin: 0;
   padding: 0;
@@ -104,6 +97,8 @@
 
 body {
   background-color: white;
+  position: relative;
+  z-index: -10;
 }
 
 .container {
@@ -175,6 +170,42 @@ body {
   font-weight: 500;
   line-height: 24px;
   color: #748182;
+}
+
+.portfolio__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.portfolio__category_link {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42;
+  color: #748182;
+}
+
+.portfolio__gallery_overlay_subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.42;
+  color: black;
+}
+
+.portfolio__gallery_overlay_heading {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: black;
 }
 
 /**
@@ -289,5 +320,119 @@ body {
 
 .slider__item_content {
   padding-left: 20px;
+}
+
+.portfolio {
+  width: 100%;
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 80%, 21% 96%, 0 78%, 0% 0%);
+          clip-path: polygon(50% 0, 100% 0, 100% 80%, 21% 96%, 0 78%, 0% 0%);
+  background: white;
+  padding: 300px 0;
+  position: relative;
+  margin-top: -300px;
+  z-index: -2;
+}
+
+.portfolio__title {
+  margin-bottom: 10px;
+}
+
+.portfolio__category {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.portfolio__category_item {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.portfolio__gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio__gallery_item {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  padding: 20px;
+  padding-left: 0;
+}
+
+.portfolio__gallery_link {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.portfolio__gallery_link:hover .portfolio__gallery_overlay {
+  background: rgba(221, 221, 221, 0.5);
+}
+
+.portfolio__gallery_link:hover .portfolio__gallery_img {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.portfolio__gallery_link:hover .portfolio__gallery_overlay_title {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  opacity: 1;
+}
+
+.portfolio__gallery_img {
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.portfolio__gallery_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(221, 221, 221, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.portfolio__gallery_overlay_title {
+  text-align: center;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  color: black;
+  opacity: 0;
 }
 /*# sourceMappingURL=main-berlin.css.map */
