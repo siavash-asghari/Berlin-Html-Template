@@ -15,7 +15,7 @@
     clip-path: polygon($first, $second, $third, $fourth, $fifth, $sixth);
 }
 
-@mixin hexagonStyleSection($color, $point) {
-    clip-path: polygon(50% 0, 100% 0, 100% 80%, $point, 0 78%, 0% 0%);
+@mixin hexagonStyleSection($color, $point, $point2) {
+    clip-path: polygon(50% 0, 100% 0, 100% 80%, $point, $point2, 0% 0%);
     background: $color;
 }

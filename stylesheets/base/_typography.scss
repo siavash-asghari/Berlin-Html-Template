@@ -42,3 +42,27 @@
     text-transform: capitalize;
     @include typographyStyle($font-stack, 22px, bold, 1.1, $black-color);
 }
+
+.blogs__title{
+    @include typographyStyle($font-stack, 23px, bold, 1.1, $header-color);
+}
+.blog__title{
+    @include typographyStyle($font-stack, 18px, bold, 27px, $header-color);
+}
+.blog__body{
+    @include typographyStyle($font-stack, 15px, 400, 23px, $text-color);
+}
+.blog__author{
+    @include typographyStyle($font-stack, 12px, 700, 17.14px, $black-color);
+}
+.blog__date{
+    @include typographyStyle($font-stack, 12px, 300, 17.14px, $text-color);
+}
+.blogs__link_link{
+    text-decoration: none;
+    @include typographyStyle($font-stack, 12px, 300, 17.14px, $header-color);
+
+    &:hover{
+    color: $base-color;
+    }
+}

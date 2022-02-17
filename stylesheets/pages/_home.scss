@@ -1,5 +1,5 @@
 .about {
-    @include hexagonStyleSection($light-gray, 76% 96%);
+    @include hexagonStyleSection($light-gray, 76% 96%, 0 78%);
     padding: 300px 0;
     margin-top: -170px;
     position: relative;
@@ -58,8 +58,8 @@
 
 .portfolio {
     width: 100%;
-    @include hexagonStyleSection($base-color, 21% 96%);
-    padding: 300px 0;
+    @include hexagonStyleSection($base-color, 21% 96%, 0 85%);
+    padding: 300px 0 500px 0;
     position: relative;
     margin-top: -300px;
     z-index: -2;
@@ -104,7 +104,7 @@
         .portfolio__gallery_img {
             filter: blur(3px);
             -webkit-filter: blur(3px);
-}
+        }
 
         .portfolio__gallery_overlay_title {
             transform: translateY(0px);
@@ -158,4 +158,63 @@
     -o-transition: all 0.5s ease-in-out;
     color: rgba(0, 0, 0, 1);
     opacity: 0;
+}
+
+.blogs {
+    width: 100%;
+    @include hexagonStyleSection($light-gray, 76% 96%, 0 85%);
+    padding: 400px 0 400px 0;
+    position: relative;
+    z-index: -3;
+    margin-top: -380px;
+}
+
+.blogs__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogs__title {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.blogs__items_blog {
+    flex-basis: 32%;
+}
+
+.blogs__image {
+    width: 100%;
+}
+
+.blog__title {
+    margin: 30px 0;
+}
+
+.blog__body {
+    margin-bottom: 30px;
+}
+
+.blogs__link {
+    margin-top: 100px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.blogs__link_link {
+    padding: 10px;
+    border: 1px solid $text-color;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background: $header-color;
+    }
+}
+
+.blogs__icon {
+    padding-left: 20px;
 }
