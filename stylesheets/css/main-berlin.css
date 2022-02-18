@@ -335,6 +335,14 @@ body {
   color: black;
 }
 
+.form-submit {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 17px;
+  color: #748182;
+}
+
 /**
  * Clear inner floats
  */
@@ -714,7 +722,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   text-align: right;
-  border: 1px solid black;
+  border: 1px solid #748182;
   width: 120px;
   margin-top: 30px;
   margin-left: 750px;

@@ -127,3 +127,6 @@
     padding-top: 60px;
     @include typographyStyle($font-stack, 23px, 900, 1.1, $black-color);
 }
+.form-submit{
+    @include typographyStyle($font-stack, 13px, inherit, 17px, $text-color);
+}
