@@ -122,11 +122,32 @@
         }
     }
 }
-.contact__form_title{
+
+.contact__form_title {
     text-align: right;
     padding-top: 60px;
     @include typographyStyle($font-stack, 23px, 900, 1.1, $black-color);
 }
-.form-submit{
+
+.form-submit {
     @include typographyStyle($font-stack, 13px, inherit, 17px, $text-color);
+}
+
+.footer__item_link {
+    @include typographyStyle($font-stack, 13px, 400, 1.4, $footer-color);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        color: $text-color
+    }
+}
+.footer__copyright, .footer__compony{
+    text-align: center;
+    padding-top: 50px;
+    @include typographyStyle($font-stack, 13px, 400, 1.4, $text-color);
 }
